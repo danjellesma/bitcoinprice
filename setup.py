@@ -11,7 +11,7 @@ from os import path
 
 setup(
     name='bitcoinprice',
-    version='1.0.1',
+    version='1.0.2',
     description='Retrieves the current Bitcoin Price',
     url='https://github.com/danjellesma/bitcoinprice',
     author='Dan Jellesma',
@@ -30,5 +30,5 @@ setup(
     ],
     keywords='bitcoin bitcoinapi',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    install_requires=['requests'],
+    install_requires=['requests', 'pprint'],
 )

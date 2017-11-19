@@ -16,7 +16,7 @@ Get the full price details:
 
 import bitcoinprice 
 
-print(bitcoinprice.get_price())
+print(bitcoinprice.get_price('btc'))
 
 ```
 
@@ -31,7 +31,7 @@ Simple price:
 
 import bitcoinprice 
 
-print(bitcoinprice.get_price_simple())
+print(bitcoinprice.get_price_simple('btc'))
 
 ```
 
@@ -41,6 +41,29 @@ Sample Output:
 
 ```
 
+# Coin Types: BTC, LTC, ETH 
+
+By default, the price is returned in USD. To see euros add the parameter:
+
+```bash
+import bitcoinprice 
+
+print(bitcoinprice.get_price_simple('btc')
+print(bitcoinprice.get_price_simple('ltc')
+
+```
+# Currancy: Euro 
+
+By default, the price is returned in USD. To see euros add the parameter:
+
+```bash
+import bitcoinprice 
+
+print(bitcoinprice.get_price_simple('btc', 'eur'))
+print(bitcoinprice.get_price_simple('eth', 'eur'))
+print(bitcoinprice.get_price('ltc', 'eur'))
+
+```
 ## Test
 
 ```bash
